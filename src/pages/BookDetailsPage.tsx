@@ -28,6 +28,7 @@ export default function BookDetailsPage() {
           src={book.image}
           alt={`Cover of ${book.title}`}
           className="details-cover"
+          style={{ backgroundColor: book.backgroundColor }}
         />
 
         <Card.Body>
