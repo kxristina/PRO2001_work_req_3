@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# Entertainment Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Entertainment Gallery is a responsive React application that displays a collection of six book recommendations in a card-based gallery. Each card contains a book title, cover image, and a short description. Users can click on a book to navigate to a separate summary page.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Displays six different books in a responsive card layout.
+* Uses React Bootstrap to adapt the gallery to different screen sizes.
+* Includes a reusable BookCard component.
+* Provides a separate details page for each book.
+* Uses React Router for navigation between the gallery and book details.
 
-## Expanding the ESLint configuration
+## Tools
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* React Bootstrap
+* React Router
+* Visual Studio Code
+* GitHub
+* ChatGPT used for clarification and troubleshooting
+* Claude used to generate images
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## How to run the app
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. In Terminal, clone the repository 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone https://github.com/kxristina/PRO2001_work_req_3.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Go into the project folder
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+cd PRO2001_work_req_3
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Install dependencies
+
+npm install
+
+4. Start the development server
+
+npm run dev
+
+5. Open the URL shown in the terminal in your browser.
+   To stop the development server, press Ctrl + C in the terminal.
+
+## Image Credits
+All images were generated using Claude generation tool. They were created for this educational project and are intended as illustrative book cover designs, not official published covers.
