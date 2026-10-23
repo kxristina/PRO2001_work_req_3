@@ -19,6 +19,10 @@ export default function BookCard({ book }: BookCardProps) {
       <Card.Body className="d-flex flex-column">
         <Card.Title>{book.title}</Card.Title>
 
+        <Card.Text className="book-author">
+          By {book.author}
+        </Card.Text>
+
         <Card.Text className="book-description">
           {book.description}
         </Card.Text>

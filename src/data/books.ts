@@ -1,6 +1,7 @@
 export interface Book {
   id: number;
   title: string;
+  author: string;
   image: string;
   description: string;
   details: string;
@@ -10,6 +11,7 @@ export const books: Book[] = [
   {
     id: 1,
     title: "Klara and the Sun",
+    author: "Kazuo Ishiguro",
     image: "/images/sun.png",
     description: "An artificial friend named Klara observes human life and explores the meaning of love, hope, and what it means to be human.",
     details:
@@ -18,6 +20,7 @@ export const books: Book[] = [
   {
     id: 2,
     title: "To Kill a Mockingbird",
+    author: "Harper Lee",
     image: "/images/mockingbird.png",
     description: "A young girl witnesses racism and injustice in her small Southern town.",
     details:
@@ -26,6 +29,7 @@ export const books: Book[] = [
   {
     id: 3,
     title: "The Midnight Library",
+    author: "Matt Haig",
     image: "/images/bookshelf.png",
     description: "A woman explores different versions of her life in a mysterious library.",
     details:
@@ -34,6 +38,7 @@ export const books: Book[] = [
   {
     id: 4,
     title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
     image: "/images/champagne.png",
     description: "A mysterious millionaire pursues a dream in the Jazz Age.",
     details:
@@ -42,6 +47,7 @@ export const books: Book[] = [
   {
     id: 5,
     title: "Harry Potter",
+    author: "J. K. Rowling",
     image: "/images/glasses.png",
     description: "A young wizard discovers a magical world.",
     details:
@@ -50,6 +56,7 @@ export const books: Book[] = [
   {
     id: 6,
     title: "The Little Prince",
+    author: "Antoine de Saint-Exupéry",
     image: "/images/moon.png",
     description: "A poetic tale about friendship, love, and life.",
     details:

@@ -72,6 +72,11 @@ body {
   flex: 1;
 }
 
+.book-author {
+  color: #6c757d;
+  font-style: italic;
+}
+
 .book-description {
   margin-bottom: 2rem;
 }
